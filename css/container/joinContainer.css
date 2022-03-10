@@ -1,0 +1,146 @@
+
+
+.container{}
+.container .inner-container{
+  padding: 80px 20px;
+}
+.container .inner-container .join{}
+.container .inner-container .join .inner-join{
+  display: flex;
+  justify-content: center;
+}
+.container .inner-container .join .inner-join .join-con{
+  flex: 0 1 800px;
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  padding: 20px 40px;
+  box-shadow: 0 0 20px rgb(126, 125, 125);
+}
+.container .inner-container .join .inner-join .join-con h1.title{
+  line-height: 30px;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #555;
+  color: #fff;
+  font-weight: 400;
+}
+.container .inner-container .join .inner-join .join-con .join-form{
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  padding: 10px;
+}
+.container .inner-container .join .inner-join .join-con .join-form form ul{
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  padding: 10px;
+  /* 세로로도 gap주면 편하게 되네~ margin-bottom 뭐 이렇게 안 줘도 되고.. */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .inner-container .join .inner-join .join-con .join-form form ul li{
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  display: flex;
+  line-height: 30px;
+  padding: 5px 0;
+}
+.container .inner-container .join .inner-join .join-con .join-form form ul li label{
+  /* 변하지 않는 다는 말(고정형) -> flex :  0 0 고정값px; */
+  flex: 0 0 130px;
+  background-color: #555;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+.container .inner-container .join .inner-join .join-con .join-form form ul li .rightInput{
+  flex: 1;
+  /* border: 1px solid #f00; */
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.container .inner-container .join .inner-join .join-con .join-form form ul li.li1 input{
+  width: 100%;
+  height: 30px;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+.container .inner-container .join .inner-join .join-con .join-form form ul li.li1 input:focus{
+  outline: 6px dotted #0f0;
+}
+.container .inner-container .join .inner-join .join-con .join-form form ul li:not(.li1){
+  background-color: #ccc;
+  /* display: flex;
+  justify-content: flex-start;
+  gap: 20px; */
+}
+/* .container .inner-container .join .inner-join .join-con .join-form form ul li.li5{
+  background-color: #ff0;
+} */
+/* 위와 아래 같은 말임,, 다만 아래 것이 선생님이 하신 방법 */
+.container .inner-container .join .inner-join .join-con .join-form form ul li:last-child{
+  /* background-color: #ff0; */
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  /* 편하게 이제 편하게 쓰자 gap,, margin같은 거 보다는 */
+}
+.container .inner-container .join .inner-join .join-con .join-form form ul li:last-child input{
+  /* input태그는 기본적으로 어떤 속성? 기본 display 속성은? = inline??? 맞나?? */
+  flex: 0 1 100px;
+  display: block;
+  /* border: 0; */
+  /* margin: 0 auto; */
+  /* margin-right: 10px; */
+  /* margin-right보다는 부모에 gap을 줘라 */
+  padding: 5px 0;
+  border-radius: 20px;
+  background-color: #000;
+  border: 1px solid;
+  color: #fff;
+}
+.container .inner-container .join .inner-join .join-con .join-form form ul li:last-child input:hover{
+  /* background-color: #ff0; */
+  /* background-color: #fff; */
+  background-color: #ccc;
+  border: 1px solid;
+  color: #000;
+}
+.container .inner-container .join .inner-join .join-con .join-form form ul li.li2 .rightInput{
+  /* background-color: #0f0; */
+}
+.container .inner-container .join .inner-join .join-con .join-form form ul li.li2 .rightInput select{
+  /* background-color: #f0f; */
+  /* border: 1px dashed #ccc; */
+  height: 22px;
+}
+.container .inner-container .join .inner-join .join-con .join-form form ul li.li2 .rightInput input{
+  /* background-color: #f0f; */
+  /* border: 1px dashed #ccc; */
+  height: 22px;
+}
+.container .inner-container .join .inner-join .join-con .join-form form ul li.li2 .rightInput input:focus{
+  outline: 6px dotted rgb(255, 51, 0);
+}
+
+.container .inner-container .join .inner-join .join-con .join-form form ul li.li3 .rightInput input[type=radio]{
+  width: 15px;
+  height: 10px;
+}
+.container .inner-container .join .inner-join .join-con .join-form form ul li.li3 .rightInput input[type=radio]:focus{
+  outline: 2px dotted rgb(255, 51, 0);
+}
+.container .inner-container .join .inner-join .join-con .join-form form ul li{}
+
+@media only screen and (max-width:768px) {
+  .container .inner-container{
+    padding: 80px 30px;
+  }
+}
+
+@media only screen and (max-width:640px) {
+  .container .inner-container{
+    padding: 80px 30px;
+  }
+}
